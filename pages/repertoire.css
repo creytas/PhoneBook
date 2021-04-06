@@ -9,11 +9,14 @@ body {
     height: 100vh;
     margin: 0%;
     padding: 0%;
-    background-color: #0d0d0d;
+    background-color: #d3e1e2;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
     color: #2f80ed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon {
