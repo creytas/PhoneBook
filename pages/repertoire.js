@@ -37,7 +37,7 @@ btnCreer.addEventListener('click', function(e) {
     // delete button
     let btnDelete = document.createElement('img');
     btnDelete.classList.add('btn-delete');
-    btnDelete.setAttribute('src', 'close.svg');
+    btnDelete.setAttribute('src', 'img/close.svg');
     btnDelete.setAttribute('title', 'Supprimer');
     fiche.appendChild(btnDelete);
     //it's here that the 'ficheItems' block for the 'fichePicture' block start            
@@ -45,7 +45,7 @@ btnCreer.addEventListener('click', function(e) {
     if (inputFile.files && inputFile.files[0]) {
         profilePicture.src = URL.createObjectURL(inputFile.files[0]);
     } else {
-        profilePicture.src = 'user_21998.svg';
+        profilePicture.src = 'img/user_21998.svg';
     }
     profilePicture.classList.add('img-profile');
     fichePicture.appendChild(profilePicture);
@@ -59,7 +59,7 @@ btnCreer.addEventListener('click', function(e) {
     allName.classList.add('flex-row');
 
     let firstIco = document.createElement('img');
-    firstIco.setAttribute('src', 'user_21998.svg');
+    firstIco.setAttribute('src', 'img/user_21998.svg');
     firstIco.classList.add('icon');
     allName.appendChild(firstIco);
 
@@ -72,7 +72,7 @@ btnCreer.addEventListener('click', function(e) {
     groupBlockBis.classList.add('flex-row');
 
     let secondIcoBis = document.createElement('img');
-    secondIcoBis.setAttribute('src', 'mobile_phone_smartphone_icon_179542.svg');
+    secondIcoBis.setAttribute('src', 'img/mobile_phone_smartphone_icon_179542.svg');
     secondIcoBis.classList.add('icon');
     groupBlockBis.appendChild(secondIcoBis);
 
@@ -85,7 +85,7 @@ btnCreer.addEventListener('click', function(e) {
     groupBlock.classList.add('flex-row');
 
     let secondIco = document.createElement('img');
-    secondIco.setAttribute('src', 'users_21945.svg');
+    secondIco.setAttribute('src', 'img/users_21945.svg');
     secondIco.classList.add('icon');
     groupBlock.appendChild(secondIco);
 
@@ -98,7 +98,7 @@ btnCreer.addEventListener('click', function(e) {
     bioBlock.classList.add('flex-row');
 
     let thirdIco = document.createElement('img');
-    thirdIco.setAttribute('src', 'chat_left_quote_icon_160289.svg');
+    thirdIco.setAttribute('src', 'img/chat_left_quote_icon_160289.svg');
     thirdIco.classList.add('icon');
     bioBlock.appendChild(thirdIco);
 
