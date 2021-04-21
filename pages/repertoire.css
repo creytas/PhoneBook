@@ -1,14 +1,12 @@
 * {
     box-sizing: border-box;
-    /* padding: 0;
-    margin: 0; */
 }
 
 body {
     width: 100vw;
     height: 100vh;
     margin: 0%;
-    padding: 0%;
+    padding:0%;
     background-color: #d3e1e2;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -32,24 +30,15 @@ body {
     margin: 1%;
 }
 
-#search-contact {
-    width: 18.7%;
-    position: absolute;
-    left: 66%;
-    padding: 0.4%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    border: 2px solid #817f7f;
-    border-radius: 5px;
-    color: #2f80ed;
-}
-
 .img-profile {
     width: 154px;
     margin: 11% 0%;
 }
 
+.img-preview{
+    width: 189px;
+    object-fit: cover;
+}
 .flex-row {
     width: 100%;
     display: flex;
@@ -85,14 +74,17 @@ body {
 }
 
 .container {
-    width: 95%;
+    position: relative;
+    top: 25%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .container-card {
-    width: 90%;
+    width: 95%;
+    height: 900px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -100,11 +92,12 @@ body {
     justify-content: space-around;
     box-shadow: 0px 0px 4px #817f7f;
     border: 0px solid navy;
-    margin-top: 1.7%;
+    margin: 7% 0% 10% 0%;
 }
 
 .card {
     width: 60%;
+    margin-top: -20%;
     display: flex;
     flex-direction: column;
     box-shadow: 0px 0px 4px #817f7f;
@@ -127,7 +120,7 @@ body {
     display: flex;
     justify-content: left;
     align-items: center;
-    margin-top: -0.5%;
+    margin-top: -6.9%;
     padding-left: 2.5%;
     padding-right: 10%;
 }
@@ -167,7 +160,7 @@ body {
 
 #form-contact input,
 #form-contact textarea {
-    width: 170%;
+    width: 166%;
     padding: 2%;
     margin-bottom: 2%;
     font-family: 'Roboto', sans-serif;
@@ -189,14 +182,14 @@ body {
 #form-contact select {
     margin-bottom: 2%;
     padding: 1.6%;
-    width: 170%;
+    width: 166%;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: 14px;
     color: #2f80ed;
     appearance: none;
     border: 1px solid #817f7f;
-    background: url("fleche-vers-le-bas.svg") no-repeat;
+    background: url("../img/fleche-vers-le-bas.svg") no-repeat;
     background-position: 98%;
     background-size: 20px;
     background-color: #fff;
@@ -214,15 +207,10 @@ body {
     width: 100%;
     display: flex;
     align-items: flex-start;
-    margin-top: 8%;
-    margin-bottom: 7%;
-    margin-right: 40%;
-    padding: 1%;
-    padding-right: -80%;
 }
 
 .container-upload>#upload-pix {
-    width: 2%;
+    width: 0.5%;
     visibility: hidden;
 }
 
@@ -233,19 +221,22 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 69%;
-    padding: 0.8%;
+    width: 40%;
+    padding: 0.8% 20% 0.8% 5%;
 }
 
 #pix-choice {
     width: 40px;
     height: 40px;
 }
-
+#text-choice{
+    width: 50%;
+}
 .uploaded-pix {
-    width: 95px;
-    height: 95px;
+    width: 195px;
+    height: 200px;
     display: flex;
+    margin:0% -80% 0% 0%;
     border: 3px solid #2f80ed;
 }
 
@@ -253,12 +244,12 @@ body {
     width: 45%;
     display: flex;
     justify-content: space-around;
-    margin-left: 62.5%;
+    margin:-20% 0% 0% 62.5%;
     border: 0px solid #000;
 }
 
 .card-button button {
-    margin: 5%;
+    margin: 75% 5% 5% 5%;
     padding: 7% 40%;
     color: #fff;
     font-family: 'Roboto', sans-serif;
@@ -309,6 +300,8 @@ body {
 
 #list-body {
     width: 103%;
+    height: 720px;
+    border: 0px green solid;
     display: flex;
     flex-direction: column;
 }

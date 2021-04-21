@@ -4,6 +4,7 @@ let inputPhoneNumber = document.querySelector('#telephone');
 let inputGroup = document.querySelector('#groupe');
 let inputBio = document.querySelector('#bio');
 let inputFile = document.querySelector('#upload-pix');
+let uploadedPictureContainer = document.querySelector('.uploaded-pix');
 
 inputFirstName.maxLength = 25;
 inputLastName.maxLength = 25;
@@ -12,7 +13,26 @@ inputPhoneNumber.maxLength = 17;
 let btnCreer = document.querySelector('#submit');
 let btnReinit = document.querySelector('#reset');
 let btnSerarch = document.querySelector('#search');
+inputFile.addEventListener('change', function(e){
+    e.preventDefault();
+    let uploadedPicture = document.createElement('img');
+    if(uploadedPictureContainer.lastChild !== null){
+        let picture = uploadedPictureContainer.firstChild;
+        uploadedPictureContainer.removeChild(picture);
+    }
 
+    if (inputFile.files && inputFile.files[0]) {
+        uploadedPicture.src = URL.createObjectURL(inputFile.files[0]);
+    } else {
+        uploadedPicture.src = 'img/user_21998.svg';
+    }
+    uploadedPicture.classList.add('img-preview');
+    uploadedPictureContainer.appendChild(uploadedPicture);
+    console.dir(uploadedPicture);
+});
+btnReinit.addEventListener('click', function(e){
+    uploadedPictureContainer.removeChild(uploadedPictureContainer.lastChild);
+});
 btnCreer.addEventListener('click', function(e) {
     e.preventDefault();
 
